@@ -1,8 +1,8 @@
-import { Task } from "./TodoList";
+import { Task } from "../TodoList";
 import React from "react";
 import { Button } from "@/components/ui/button"
 
-export default function TodoListInput(props: { AddTodo: (task: Task) => void}){
+export default function TodoListInput({addTodo}: { addTodo: (task: Task) => void}){
 
     const [inputValue, setInputValue] = React.useState("")
 
@@ -18,7 +18,7 @@ export default function TodoListInput(props: { AddTodo: (task: Task) => void}){
                 status:"ACTIVE"
             }
 
-            props.AddTodo(newTask)
+            addTodo(newTask)
             setInputValue("")
         }
     }

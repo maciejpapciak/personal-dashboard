@@ -1,4 +1,4 @@
-import TodoList from "./todo_list/TodoList"
+import TodoList from "./todo-list/TodoList"
 
 export default function MainContent(){
     return(

@@ -15,7 +15,7 @@ const useWeatherAPI = () => {
 
     React.useEffect(() => {
         setLoading(true)
-        fetch(`https://api.weatherapi.com/v1/forecast.json?key=4692545817db46f8805175804242802&q=${city}&days=5&aqi=no&alerts=no`)
+        fetch(`https://api.weatherapi.com/v1/current.json?key=1ef8bfe100dc4719900182816242102&q=${city}`)
         .then(response => {
             if (!response.ok) {
                 alert(`Cannot find city: ${city}`)

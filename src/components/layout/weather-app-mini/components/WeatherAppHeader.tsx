@@ -29,7 +29,7 @@ export default function WeatherAppHeader({cityName, changeCity}: {cityName:strin
                     onChange={handleCityInput}
                     value={inputValue}
                 />
-                <Button onClick={handleChangeCity}>Search</Button>
+                <Button onClick={handleChangeCity} className="bg-transparent outline outline-1 hover:bg-transparent/20">Search</Button>
             </div>
 
             <h1 className="text-center font-bold uppercase text-3xl my-2">{cityName}</h1>

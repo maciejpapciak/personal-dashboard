@@ -33,7 +33,7 @@ export default function WeatherAppHeader({cityName, changeCity}: {cityName:strin
             </div>
 
             <h1 className="text-center font-bold uppercase text-3xl my-2">{cityName}</h1>
-            <h1 className="text-center text-zinc-100">{current}</h1>
+            <h1 className="text-center text-zinc-100/80">{current}</h1>
         </div>
         
     )

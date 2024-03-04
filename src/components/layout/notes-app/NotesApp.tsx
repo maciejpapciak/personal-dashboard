@@ -1,4 +1,3 @@
-import React from "react"
 import NoteContent from "./components/NoteContent"
 import NoteItems from "./components/NoteItems"
 import NotesHeader from "./components/NotesHeader"
@@ -21,7 +20,7 @@ export default function NotesApp(){
     console.log(selectedNote, newNoteContent)
 
     return(
-        <div className="border border-green-200 mb-5 p-5 rounded-md break-inside-avoid row-span-2">
+        <div className=" mb-5 p-5 rounded-md break-inside-avoid row-span-2 bg-gradient-to-r from-slate-500/30 from-10% to-gray-500/10 to-90%">
             <NotesHeader addNote={addNote} />
             <NoteItems notes={notes} removeNote={removeNote} selectNote={selectNote}/>
             {selectedNote && notes.length ? <NoteContent key={selectedNote} editNote={editNote} currentNoteId={selectedNote} newNoteContent={newNoteContent} /> : null}

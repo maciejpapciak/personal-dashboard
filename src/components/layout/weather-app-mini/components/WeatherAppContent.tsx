@@ -29,7 +29,7 @@ export default function WeatherAppContent(
         <div className="flex flex-col text-center justify-center mt-5">
             <div className="flex justify-center">
                 <img src={`https:${icon}`} alt={weatherStatus}></img>
-                <h5 className="uppercase text-md mt-5">{weatherStatus}</h5>
+                <h5 className="uppercase text-md mt-5 text-slate-100/70">{weatherStatus}</h5>
             </div>
             <div className="flex justify-center text-7xl text-zinc-100 pb-4">{displayedTemperature}{temp.typeOfTemp === "CELCIUS" ? <RiCelsiusLine /> : <RiFahrenheitLine />}</div>
 

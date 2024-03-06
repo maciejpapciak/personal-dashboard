@@ -13,7 +13,7 @@ export default function WeatherAppMini(){
     if(!weatherData) return null
 
     return(
-        <div className="mb-5 p-5 row-span-2 rounded-md break-inside-avoid bg-gradient-to-r from-slate-500/30 from-10% to-gray-500/10 to-90% text-slate-100">
+        <div className="mb-5 p-5 row-span-2 rounded break-inside-avoid bg-gradient-to-r from-slate-500/30 from-10% to-gray-500/10 to-90% text-slate-100">
             <WeatherAppHeader 
                 cityName={weatherData.location.name}
                 changeCity={changeCity}

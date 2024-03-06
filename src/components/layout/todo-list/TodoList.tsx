@@ -1,5 +1,4 @@
-import TodoHeader from "./components/TodoHeader"
-import TodoTasks from "./components/TodoTasks"
+import TodoApp from "./components/TodoApp"
 import useTasks from "./hooks/useTasks"
 
 
@@ -8,7 +7,9 @@ export type TaskStatus = "ACTIVE" | "COMPLETED"
 export type Task = {
     id: number,
     content:string,
-    status: TaskStatus
+    status: TaskStatus,
+    isFavorite: boolean,
+    category: string
 }
 
 
@@ -16,12 +17,19 @@ export type Task = {
 
 export default function TodoList(){
    
-    const {taskData, completedTasksPercentage, addTodo, toggleTodo, removeTodo} = useTasks()
+    const {taskData, completedTasksPercentage, addTodo, toggleTodo, removeTodo, checkAsFavorite} = useTasks()
 
     return(
-        <div className="border mb-5 p-5 rounded-md break-inside-avoid bg-slate-100 row-span-2">
-            <TodoHeader percentage={completedTasksPercentage}/>
-            <TodoTasks taskData={taskData} addTodo={addTodo} toggleTodo={toggleTodo} removeTodo={removeTodo} />
+        <div className="grid grid-cols-5 grid-rows-3 h-[40rem] p-7 rounded-md gap-5">
+            <TodoApp 
+                taskData={taskData} 
+                completedTasksPercentage={completedTasksPercentage}
+                addTodo={addTodo}
+                toggleTodo={toggleTodo}
+                removeTodo={removeTodo}
+                checkAsFavorite={checkAsFavorite}
+            />
+            
         </div>
     )
 }

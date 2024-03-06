@@ -1,13 +1,14 @@
-import TodoListItem from "./TodoTaskItem"
 import TodoListInput from "./TodoListInput"
 import { Task } from "../TodoList"
+import TodoOptions from "./TodoOptions"
 
-export default function TodoTasks({addTodo, toggleTodo, removeTodo, taskData}:
+export default function TodoTasks({addTodo, toggleTodo, removeTodo, taskData, checkAsFavorite}:
         {
             taskData: Task[],
             addTodo: (task: Task) => void, 
             toggleTodo: (id: number) => void, 
-            removeTodo: (id:number) => void
+            removeTodo: (id:number) => void,
+            checkAsFavorite: (id: number) => void
         }){
 
 
@@ -15,18 +16,8 @@ export default function TodoTasks({addTodo, toggleTodo, removeTodo, taskData}:
         <div className="mt-5">
 
             <TodoListInput addTodo={addTodo} />
-
-            <ul className="mt-10 overflow-y-scroll">
-                {taskData.map(task => 
-                    <TodoListItem 
-                        task={task} 
-                        key={task.id} 
-                        toggleTodo={() => toggleTodo(task.id)} 
-                        removeTodo={() => removeTodo(task.id)}
-                    />
-                )}
-            </ul>
-
+            
+            <TodoOptions toggleTodo={toggleTodo} removeTodo={removeTodo} taskData={taskData} checkAsFavorite={checkAsFavorite} />
             
         </div>
     )

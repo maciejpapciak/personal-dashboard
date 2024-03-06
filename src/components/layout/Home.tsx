@@ -1,14 +1,14 @@
 import NotesAppMini from "./notes-app-mini/NotesAppMini";
-import TodoList from "./todo-list/TodoList";
+import TodoListMini from "./todo-list-mini/TodoListMini";
 import WeatherAppMini from "./weather-app-mini/WeatherAppMini";
 
 
 export default function Home(){
     return(
-        <div className="container py-10 grid grid-cols-3 gap-5 grid-rows-2">
+        <div className="p-7 grid grid-cols-3 gap-5 grid-rows-2">
             <NotesAppMini />
             <WeatherAppMini />
-            <TodoList />
+            <TodoListMini />
         </div>
     )
 }

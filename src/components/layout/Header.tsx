@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export function Header() {
   return (
-    <div className="border-b">
+    <div className="bg-neutral-800 text-slate-100">
       <div className="flex h-16 items-center px-4 gap-2">
         <img src={logo} alt={"cetuspro whale"} className={"h-6 block"} />
         <h1 className={"font-bold"}>Cetus Dashboard</h1>

@@ -14,10 +14,10 @@ export default function WeatherApp(){
 
     return(
         <div className="grid grid-cols-6 grid-rows-2 gap-3 p-5 bg-neutral-900">
-            <CurrentForecastView weatherData={weatherData} changeCity={changeCity}  loading={loading} />
+            <CurrentForecastView weatherData={weatherData} changeCity={changeCity} loading={loading} />
             <CurrentForecastInfo weatherData={weatherData} />
             <ForecastDays weatherData={weatherData} />
-            <ForecastMap />
+            <ForecastMap lat={weatherData.location.lat} lon={weatherData.location.lon} />
         </div>
     )
 }

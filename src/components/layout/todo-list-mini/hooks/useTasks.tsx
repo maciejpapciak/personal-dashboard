@@ -1,5 +1,5 @@
 import React from "react";
-import { Task } from "../TodoList";
+import { Task, TaskStatus } from "../TodoListMini";
 import toggleTodoStatus from "../utils/todoHelpers";
 
 
@@ -10,11 +10,8 @@ const useTasks = () => {
         return data !== null ? JSON.parse(data) : [];
     })
 
-    
-
 
     const completedTasksPercentage = Math.round(taskData.filter(completed => completed.status === "COMPLETED").length*100/(taskData.length || 1))
-    
 
 
 
@@ -34,20 +31,13 @@ const useTasks = () => {
 
     function toggleTodo(id: number){
         setTaskData(prevTaskData => prevTaskData.map(task => task.id === id ? {...task, status: toggleTodoStatus(task.status)} : task))
-        
     }
 
     function removeTodo(id: number){
         setTaskData(prevTaskData => prevTaskData.filter(task => task.id !== id))
     }
 
-    function checkAsFavorite(id: number){
-        setTaskData(prevTaskData => prevTaskData.map(task => task.id === id ? {...task, isFavorite: !task.isFavorite } : task))
-    }
-
-
-
-    return {completedTasksPercentage, addTodo, toggleTodo, removeTodo, taskData, checkAsFavorite}
+    return {completedTasksPercentage, addTodo, toggleTodo, removeTodo, taskData}
 }
 
 

@@ -16,14 +16,14 @@ export default function TodoListItem({task, toggleTodo, removeTodo}:
     }
 
     return(
-            <label className={`flex items-center justify-between my-2 mx-2 pl-2 rounded-md ${task.status === "COMPLETED" ? "bg-green-100 text-green-600 accent-green-600 font-bold" : ""}`} >
+            <label className={`flex items-center justify-between my-2 mx-2 pl-2 rounded-md ${task.status === "COMPLETED" ? "bg-violet-200 text-violet-600 accent-violet-600 font-bold" : ""}`} >
                 <div className="flex">
                 <input
                     type="checkbox"
                     name="status"
                     checked={task.status === "COMPLETED"}
                     onChange={(e) => toggleTodo(task.id)} 
-
+                    className="w-4"
                 />
                 <li className="ml-2">{task.content}</li>
                 </div>

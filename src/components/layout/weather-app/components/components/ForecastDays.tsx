@@ -14,7 +14,7 @@ export default function ForecastDays({weatherData}: {weatherData: WeatherData}){
         />)
 
     return(
-        <div className="col-span-2 m-2 p-4 bg-gradient-to-r from-slate-500/30 to-gray-500/10 rounded text-slate-100">
+        <div className="col-span-6 col-start-1 col-end-7 row-start-2 lg:col-span-3 lg:row-start-1 lg:col-start-4 xl:col-span-2 xl:row-start-2 m-2 p-4 bg-gradient-to-r from-slate-500/30 to-gray-500/10 rounded text-slate-100">
             <h1 className="text-xl font-bold p-2">5 days Forecast</h1>
             <div className="flex flex-col mt-10">
                 {days}

@@ -13,7 +13,7 @@ export default function WeatherApp(){
     if(!weatherData) return null
 
     return(
-        <div className="grid grid-cols-6 grid-rows-2 gap-3 p-5 bg-neutral-900">
+        <div className="grid grid-cols-6 gap-3 p-5 bg-neutral-900">
             <CurrentForecastView weatherData={weatherData} changeCity={changeCity} loading={loading} />
             <CurrentForecastInfo weatherData={weatherData} />
             <ForecastDays weatherData={weatherData} />

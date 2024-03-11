@@ -46,7 +46,7 @@ export default function UvIndex({uvIndex}: {uvIndex: number}){
       }, [options]);
 
     return(
-        <div className="row-span-2 flex flex-col p-3 bg-neutral-900/50 rounded">
+        <div className="row-span-2 col-span-3 md:col-span-2 md:row-span-3 lg:col-span-1 lg:row-span-2 flex flex-col p-3 bg-neutral-900/50 rounded">
             <h1 className="text-slate-100/70">UV Index</h1>
             <div>
                 <div className="uvChart">

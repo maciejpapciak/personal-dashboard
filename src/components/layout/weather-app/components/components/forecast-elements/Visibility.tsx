@@ -2,7 +2,7 @@ import { MdOutlineVisibility } from "react-icons/md";
 
 export default function Visibility({visibility}: {visibility: number}){
     return(
-        <div className="flex flex-col p-3 bg-neutral-900/50 rounded">
+        <div className="col-span-3 md:col-span-1 flex flex-col p-3 bg-neutral-900/50 rounded">
             <h1 className="text-sm text-slate-100/70">Visibility</h1>
             <div className="flex justify-between mt-5">
                 <div className="flex items-end">

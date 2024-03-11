@@ -6,7 +6,7 @@ import Home from "./Home";
 
 export default function MainContent(){
     return(
-        <div className="bg-neutral-900 h-full">
+        <div className="bg-neutral-900 h-100vh">
             <Routes>
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/weather" element={<WeatherApp />}></Route>

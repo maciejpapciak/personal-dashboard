@@ -9,7 +9,7 @@ export default function CurrentForecastView({weatherData, changeCity, loading}: 
 
 
     return(
-        <div className="col-span-2 m-2 p-8 bg-gradient-to-r from-slate-500/30 from-10% to-gray-500/10 to-90% rounded">
+        <div className="col-span-6 lg:col-span-3 xl:col-span-2 m-2 p-8 bg-gradient-to-r from-slate-500/30 from-10% to-gray-500/10 to-90% rounded">
             <WeatherAppHeader 
                 cityName={weatherData.location.name}
                 changeCity={changeCity}

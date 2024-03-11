@@ -26,7 +26,7 @@ export default function WeatherAppContent(
     const displayedTemperature = temp.typeOfTemp === "CELCIUS" ? temperature : Math.round(9/5*temperature+32)
 
     return(
-        <div className="flex flex-col text-center justify-center my-5 h-full">
+        <div className="flex flex-col text-center justify-center my-5">
             <div className="flex justify-center">
                 <img src={`https:${icon}`} alt={weatherStatus}></img>
                 <h5 className="uppercase text-md mt-5">{weatherStatus}</h5>

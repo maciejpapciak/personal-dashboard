@@ -13,10 +13,7 @@ export default function TodoTasks({addTodo, toggleTodo, removeTodo, taskData}:
 
     return(
         <div className="mt-5">
-
-            <TodoListInput addTodo={addTodo} />
-
-            <ul className="mt-10 overflow-y-scroll">
+            <ul>
                 {taskData.map(task => 
                     <TodoListItem 
                         task={task} 
@@ -27,7 +24,7 @@ export default function TodoTasks({addTodo, toggleTodo, removeTodo, taskData}:
                 )}
             </ul>
 
-            
+            <TodoListInput addTodo={addTodo} />
         </div>
     )
 }

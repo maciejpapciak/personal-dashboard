@@ -16,7 +16,7 @@ export default function TodoListItem({task, toggleTodo, removeTodo}:
     }
 
     return(
-            <label className={`flex items-center justify-between my-2 mx-2 ${task.status === "COMPLETED" ? "line-through" : ""}`} >
+            <label className={`flex items-center justify-between my-2 ${task.status === "COMPLETED" ? "line-through" : ""}`} >
                 <div className="flex">
                 <input
                     type="checkbox"

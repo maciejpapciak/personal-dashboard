@@ -25,17 +25,17 @@ export default function NotesHeader({addNote}: {addNote: (note: Note) => void}){
     }
 
     return(
-        <div className="grid grid-cols-5 gap-2">
-            <h1 className="col-span-2 text-left text-2xl font-bold text-green-400">Notez</h1>
+        <div className="flex gap-2 p-5">
+            <h1 className="w-full text-left text-2xl font-bold text-emerald-600">Notez</h1>
             <Input
-            className="col-span-2"
+                className="w-2/5 text-emerald-600"
                 type="text"
                 placeholder="Note title"
                 onChange={titleChange}
                 value={title}
             />
             <Button
-                className="text-md bg-green-400 hover:bg-green-500"
+                className="w-1/5 text-md bg-emerald-800 hover:bg-emerald-700"
                 onClick={handleAddNote}
             >
                 Create

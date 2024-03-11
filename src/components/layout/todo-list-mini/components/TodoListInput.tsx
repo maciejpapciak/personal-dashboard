@@ -33,7 +33,7 @@ export default function TodoListInput({addTodo}: { addTodo: (task: Task) => void
                 onChange={handleInputValue}
                 value={inputValue}
             />
-            <Button variant="default" className="w-1/4 py-6" onClick={handleAddTodo}>Add</Button>
+            <Button variant="default" className="w-1/4 py-6 bg-violet-700" onClick={handleAddTodo}>Add</Button>
         </div>
     )
 }

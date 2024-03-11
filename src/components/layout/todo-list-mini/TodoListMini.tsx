@@ -19,7 +19,7 @@ export default function TodoList(){
     const {taskData, completedTasksPercentage, addTodo, toggleTodo, removeTodo} = useTasks()
 
     return(
-        <div className="mb-5 p-5 rounded break-inside-avoid bg-gradient-to-r from-slate-500/30 from-10% to-gray-500/10 to-90% row-span-2 text-slate-100">
+        <div className="mb-5 p-5 col-span-4 rounded bg-gradient-to-r from-slate-500/30 from-10% to-gray-500/10 to-90% row-span-2 text-slate-100">
             <TodoHeader percentage={completedTasksPercentage}/>
             <TodoTasks taskData={taskData} addTodo={addTodo} toggleTodo={toggleTodo} removeTodo={removeTodo} />
         </div>

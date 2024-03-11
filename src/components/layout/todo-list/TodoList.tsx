@@ -20,7 +20,7 @@ export default function TodoList(){
     const {taskData, completedTasksPercentage, addTodo, toggleTodo, removeTodo, checkAsFavorite} = useTasks()
 
     return(
-        <div className="grid grid-cols-5 grid-rows-3 h-[40rem] p-7 rounded-md gap-5">
+        <div className="grid grid-cols-5 grid-rows-3 p-7 rounded-md gap-5">
             <TodoApp 
                 taskData={taskData} 
                 completedTasksPercentage={completedTasksPercentage}

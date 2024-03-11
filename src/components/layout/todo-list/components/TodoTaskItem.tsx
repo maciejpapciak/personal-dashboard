@@ -17,8 +17,6 @@ export default function TodoListItem({task, toggleTodo, removeTodo, checkAsFavor
     })
     {
 
-    const createdDate = new Date(task.id)
-
     function handleRemove(){
         removeTodo(task.id)
     }
@@ -52,10 +50,7 @@ export default function TodoListItem({task, toggleTodo, removeTodo, checkAsFavor
                 </div>
             </div>
             <div className="flex items-center">
-                <div className="flex text-[12px] mx-6">
-                    <h1 className="mr-1">Created at:</h1> {createdDate.toLocaleString()}
-                </div>
-                <div>
+                <div className="px-4 py-1">
                     <Badge className={getColorByValue(task.category)} >{task.category}</Badge>
                 </div>
             </div>

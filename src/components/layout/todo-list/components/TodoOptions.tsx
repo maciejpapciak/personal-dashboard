@@ -27,8 +27,8 @@ export default function TodoOptions({toggleTodo, removeTodo, taskData, checkAsFa
 
 
     return(
-        <div className="flex gap-5">
-            <div className="my-5 w-2/5">
+        <div className="grid grid-cols-4 gap-5">
+            <div className="my-5 col-span-4 lg:col-span-1">
                 <h1 className="my-2 text-violet-500">Search tasks</h1>
                 <div>
                     <input 
@@ -53,7 +53,7 @@ export default function TodoOptions({toggleTodo, removeTodo, taskData, checkAsFa
                     </div>
                 </div>
             </div>
-            <ul className="mt-10 h-96 overscroll-auto overflow-y-auto w-full">
+            <ul className="h-auto overscroll-auto overflow-y-auto col-span-4 lg:col-span-3">
                 {
                     filteredTasks.map(task => 
                         <TodoTaskItem 

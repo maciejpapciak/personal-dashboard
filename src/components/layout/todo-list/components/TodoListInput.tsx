@@ -38,17 +38,17 @@ export default function TodoListInput({addTodo}: { addTodo: (task: Task) => void
     }
 
     return(
-        <div className="flex items-center mt-10 gap-2">
+        <div className="grid grid-cols-4 mt-10 gap-2">
             <input 
                 type="text"
-                className="w-full placeholder: italic placeholder: text-slate-900 border border-slate-200 rounded-sm py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+                className="col-span-4 md:col-span-2 lg:col-span-2 placeholder: italic placeholder: text-slate-900 border border-slate-200 rounded-sm py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
                 placeholder="Add new task..."
                 name="taskItem"
                 onChange={handleInputValue}
                 value={inputValue}
             />
             <Select name="selectedCategory" value={selectedCategory.toString()} onValueChange={setSelectedCategory}>
-                <SelectTrigger className="w-[200px]">
+                <SelectTrigger className="col-span-4 md:col-span-2 lg:col-span-1">
                     <SelectValue placeholder="Category" />
                 </SelectTrigger>
                 <SelectContent>
@@ -58,7 +58,7 @@ export default function TodoListInput({addTodo}: { addTodo: (task: Task) => void
                     </SelectGroup>
                 </SelectContent>
             </Select>
-            <Button variant="default" className="w-1/4 py-6" onClick={handleAddTodo}>Add</Button>
+            <Button className="col-span-4 lg:col-span-1 bg-violet-700" onClick={handleAddTodo}>Add</Button>
         </div>
     )
 }

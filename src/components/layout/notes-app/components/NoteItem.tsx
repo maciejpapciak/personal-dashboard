@@ -18,7 +18,7 @@ export default function NoteItem({note, removeNote, selectNote}: {note: Note, re
 
     return(
         <div 
-            className="outline outline-1 outline-green-200 w-1/2 p-2 rounded-md scroll-ml-6 snap-start"
+            className="bg-emerald-700 text-slate-100 w-full p-2 mt-0.5 cursor-pointer"
             onClick={handleSelectNote}
         >
             <div className="flex items-center justify-between">
@@ -31,8 +31,8 @@ export default function NoteItem({note, removeNote, selectNote}: {note: Note, re
                     <FaTrash />
                 </Button> 
             </div>
-            <div className="truncate text-sm mt-5">
-                {note.content.replace(regExp, '')}
+            <div className="truncate font-normal text-sm mt-3">
+                <h1 className="mt-5">{note.content.replace(regExp, '')}</h1>
             </div>            
         </div>
 

@@ -2,7 +2,7 @@ import { IoIosWater } from "react-icons/io";
 
 export default function Humidity({humidity}: {humidity: number}){
     return(
-        <div className="flex flex-col p-3 bg-neutral-900/50 rounded">
+        <div className="col-span-3 md:col-span-1 flex flex-col p-3 bg-neutral-900/50 rounded">
             <h1 className="text-sm text-slate-100/70">Humidity</h1>
             <div className="flex mt-5">
                 <div className="flex items-end">

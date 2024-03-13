@@ -53,7 +53,7 @@ export default function TodoOptions({toggleTodo, removeTodo, taskData, checkAsFa
                     </div>
                 </div>
             </div>
-            <ul className="h-auto overscroll-auto overflow-y-auto col-span-4 lg:col-span-3">
+            <ul className="h-80 mt-8 overscroll-auto overflow-y-auto col-span-4 lg:col-span-3">
                 {
                     filteredTasks.map(task => 
                         <TodoTaskItem 

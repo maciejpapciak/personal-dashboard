@@ -16,7 +16,7 @@ export default function NotesApp(){
 
 
     return(
-        <div className="container py-7 row-span-2 text-slate-100">
+        <div className="container py-7 row-span-2 text-slate-100 h-screen">
             <div className=" rounded-md bg-gradient-to-r from-slate-500/30 from-10% to-gray-500/10 to-90%">
                 <NotesHeader addNote={addNote} />
                 <NotesMainContent notes={notes} selectNote={selectNote} removeNote={removeNote} editNote={editNote} selectedNote={selectedNote} />

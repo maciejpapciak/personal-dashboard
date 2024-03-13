@@ -7,6 +7,7 @@ const useNotes = () => {
     const [notes, setNotes] = useLocalStorage<Note[]>('myNotes', [])
 
 
+
     function selectNote(id:number){
         setSelectedNote(id)
     }

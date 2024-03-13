@@ -54,6 +54,53 @@
     --ring: 224.3 76.3% 48%;
   }
 
+  .sidebarChatItem{
+    @apply hover:text-slate-100;
+    @apply hover:bg-[#25235D];
+    @apply focus:bg-[#25235D];
+    @apply focus:text-slate-100;
+    @apply p-3;
+    @apply w-12;
+    @apply dark:hover:bg-[#15C9CF];
+    @apply dark:hover:text-black/80;
+    @apply cursor-pointer;
+    @apply rounded-lg;
+    @apply dark:focus:bg-[#15C9CF];
+    @apply dark:focus:text-black/80;
+    @apply ease-in-out;
+    @apply duration-300;
+  }
+
+  .interactiveContactItems{
+    @apply text-lg;
+    @apply cursor-pointer;
+    @apply dark:hover:text-slate-100;
+  }
+  .contactItem{
+    @apply border;
+    @apply p-2;
+    @apply rounded-full;
+    @apply dark:text-slate-100;
+    @apply text-lg;
+    @apply dark:hover:bg-[#15C9CF];
+    @apply dark:hover:text-black/80;
+    @apply dark:hover:border-[#15C9CF];
+    @apply hover:bg-[#25235D];
+    @apply hover:text-slate-100;
+    @apply hover:border-[#25235D];
+    @apply ease-in-out;
+    @apply duration-200;
+  }
+  .userOptions{
+    @apply flex;
+    @apply items-center;
+    @apply justify-between;
+    @apply py-3;
+    @apply px-4;
+    @apply cursor-pointer;
+    @apply dark:hover:bg-[#25235D]/80;
+    @apply hover:bg-slate-300;
+  }
   
 }
 .quill .ql-container {

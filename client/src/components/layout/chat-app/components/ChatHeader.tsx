@@ -18,7 +18,7 @@ export default function ChatHeader({darkMode, changeMode}:
                     <CiSearch />  
                 </div>
                 <Input
-                    className="w-full border-0 dark:text-slate-100/50 text-md dark: bg-transparent"
+                    className="w-full focus-visible:ring-0 focus-visible:ring-offset-0 border-0 dark:text-slate-100/50 text-md dark: bg-transparent"
                     type="text"
                     name="searchContacts"
                     placeholder="Search contact..."

@@ -1,6 +1,6 @@
-import ChatHeader from "./components/ChatHeader";
-import ContentElements from "./components/ContentElements";
-import SidebarChatMenu from "./components/SidebarChatMenu";
+import ChatHeader from "./components/ChatHeader"
+import ContentElements from "./components/ContentElements"
+import SidebarChatMenu from "./components/SidebarChatMenu"
 
 export default function ChatLeftPanel({
     darkMode, changeMode

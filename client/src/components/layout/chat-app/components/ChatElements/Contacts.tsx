@@ -9,7 +9,7 @@ export default function Contacts(){
                 <div className="flex flex-col gap-6 pr-5 h-56">
                     <div className="flex items-center gap-5">
                         <div className="w-12 h-12 bg-emerald-500 rounded-2xl relative">
-                            <div className="absolute right-0 ring ring-4 ring-offset-0 ring-slate-300 dark:ring-[#25235D] w-2 h-2 rounded-xl bg-green-500"></div>
+                            <div className="absolute right-0 ring-4 ring-offset-0 ring-slate-300 dark:ring-[#25235D] w-2 h-2 rounded-xl bg-green-500"></div>
                         </div>
                         <div className="flex flex-col gap-1 grow">
                             <div className="flex items-center justify-between">
@@ -26,7 +26,7 @@ export default function Contacts(){
 
                     <div className="flex items-center gap-5">
                         <div className="w-12 h-12 bg-red-500 rounded-2xl relative">
-                            <div className="absolute right-0 ring ring-4 ring-offset-0 ring-slate-300 dark:ring-[#25235D] w-2 h-2 rounded-xl bg-red-500"></div>
+                            <div className="absolute right-0 ring-4 ring-offset-0 ring-slate-300 dark:ring-[#25235D] w-2 h-2 rounded-xl bg-red-500"></div>
                         </div>
                         <div className="flex flex-col gap-1 grow">
                             <div className="flex items-center justify-between">
